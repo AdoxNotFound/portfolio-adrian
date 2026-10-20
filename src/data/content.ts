@@ -218,10 +218,10 @@ export const education: Record<Locale, EducationItem[]> = {
       period: "Completado en 2025",
     },
     {
-      title: "Certificado de inglés EF SET — Reading C2, Listening C1 (72/100)",
+      title: "Certificado de inglés EF SET — B2 Upper Intermediate (58/100)",
       institution: "EF Education First",
-      period: "Ene 2023 — actualización en curso (próxima: versión con habla y escritura)",
-      link: { label: "Ver certificado", href: "https://cert.efset.org/CGhmo4?cid=em100a" },
+      period: "Oct 2026 — Reading C1, Listening C1, Speaking B2, Writing B1",
+      link: { label: "Ver certificado", href: "https://cert.efset.org/en/CGhmo4" },
     },
   ],
   en: [
@@ -241,10 +241,10 @@ export const education: Record<Locale, EducationItem[]> = {
       period: "Completed in 2025",
     },
     {
-      title: "EF SET English Certificate — Reading C2, Listening C1 (72/100)",
+      title: "EF SET English Certificate — B2 Upper Intermediate (58/100)",
       institution: "EF Education First",
-      period: "Jan 2023 — update in progress (next: speaking & writing version)",
-      link: { label: "View certificate", href: "https://cert.efset.org/CGhmo4?cid=em100a" },
+      period: "Oct 2026 — Reading C1, Listening C1, Speaking B2, Writing B1",
+      link: { label: "View certificate", href: "https://cert.efset.org/en/CGhmo4" },
     },
   ],
 };
