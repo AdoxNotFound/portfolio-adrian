@@ -1,11 +1,18 @@
-import { projects } from "@/data/profile";
+"use client";
+
+import { projects, projectsSection } from "@/data/content";
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 export default function Projects() {
+  const { locale } = useLanguage();
+  const items = projects[locale];
+  const heading = projectsSection[locale].heading;
+
   return (
     <section id="proyectos" className="mx-auto max-w-4xl px-6 py-16">
-      <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-50">Proyectos</h2>
+      <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-50">{heading}</h2>
       <div className="mt-8 grid gap-6 sm:grid-cols-2">
-        {projects.map((project) => (
+        {items.map((project) => (
           <article
             key={project.name}
             className="flex flex-col rounded-2xl border border-zinc-200 p-6 dark:border-zinc-800"

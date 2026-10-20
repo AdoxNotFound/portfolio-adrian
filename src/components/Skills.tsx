@@ -1,11 +1,18 @@
-import { skills } from "@/data/profile";
+"use client";
+
+import { skills, skillsSection } from "@/data/content";
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 export default function Skills() {
+  const { locale } = useLanguage();
+  const groups = skills[locale];
+  const heading = skillsSection[locale].heading;
+
   return (
     <section id="skills" className="mx-auto max-w-4xl px-6 py-16">
-      <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-50">Skills</h2>
+      <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-50">{heading}</h2>
       <div className="mt-8 grid gap-6 sm:grid-cols-2">
-        {Object.entries(skills).map(([group, items]) => (
+        {Object.entries(groups).map(([group, items]) => (
           <div key={group}>
             <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
               {group}

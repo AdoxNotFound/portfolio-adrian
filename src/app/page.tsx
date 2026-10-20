@@ -5,10 +5,11 @@ import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { LanguageProvider } from "@/i18n/LanguageProvider";
 
 export default function Home() {
   return (
-    <>
+    <LanguageProvider>
       <Header />
       <main className="flex-1">
         <Hero />
@@ -18,6 +19,6 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
-    </>
+    </LanguageProvider>
   );
 }
