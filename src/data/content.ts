@@ -68,10 +68,10 @@ export const projects: Record<Locale, ProjectContent[]> = {
       name: "Plataforma de trazabilidad de soya",
       client: "CANIOB — Mesa de Soya Sostenible",
       period: "Oct 2025 – presente",
-      role: "Coordinación técnica y desarrollo frontend",
+      role: "Supervisor Técnico",
       stack: ["React"],
       description:
-        "Coordinación técnica y desarrollo frontend de una plataforma de trazabilidad para la cadena de soya boliviana, con participación activa en la mesa técnica junto a actores de la cadena productiva como CANIOB, Fundación Solidaridad y ANAPO.",
+        "Supervisión técnica de una plataforma de trazabilidad para la cadena de soya boliviana, con participación en decisiones de arquitectura frontend y en la mesa técnica junto a actores de la cadena productiva como CANIOB, Fundación Solidaridad y ANAPO.",
     },
     {
       name: "RIQS — Reporte Integral Quincenal de Soya",
@@ -126,10 +126,10 @@ export const projects: Record<Locale, ProjectContent[]> = {
       name: "Soy traceability platform",
       client: "CANIOB — Sustainable Soy Roundtable",
       period: "Oct 2025 – present",
-      role: "Technical coordination and frontend development",
+      role: "Technical Supervisor",
       stack: ["React"],
       description:
-        "Technical coordination and frontend development of a traceability platform for the Bolivian soy supply chain, actively participating in the technical roundtable alongside supply-chain stakeholders such as CANIOB, Fundación Solidaridad, and ANAPO.",
+        "Technical supervision of a traceability platform for the Bolivian soy supply chain, contributing to frontend architecture decisions and actively participating in the technical roundtable alongside supply-chain stakeholders such as CANIOB, Fundación Solidaridad, and ANAPO.",
     },
     {
       name: "RIQS — Biweekly Integral Soy Report",
