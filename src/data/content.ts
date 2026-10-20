@@ -102,7 +102,7 @@ export const projects: Record<Locale, ProjectContent[]> = {
     },
     {
       name: "Plataforma de gestión de cobros y notificaciones",
-      client: "Entidad gremial (Santa Cruz, Bolivia)",
+      client: "Asociación gremial y de profesionales (Santa Cruz, Bolivia)",
       period: "Feb 2024 – May 2025",
       role: "Desarrollador Front-End y Mobile",
       stack: ["React", "React Native"],
@@ -160,7 +160,7 @@ export const projects: Record<Locale, ProjectContent[]> = {
     },
     {
       name: "Dues collection and notifications platform",
-      client: "Trade association (Santa Cruz, Bolivia)",
+      client: "Professional trade association (Santa Cruz, Bolivia)",
       period: "Feb 2024 – May 2025",
       role: "Front-End and Mobile Developer",
       stack: ["React", "React Native"],
@@ -173,18 +173,18 @@ export const projects: Record<Locale, ProjectContent[]> = {
 
 export const skills: Record<Locale, Record<string, string[]>> = {
   es: {
-    Frontend: ["React", "TypeScript", "JavaScript", "React Native", "HTML", "CSS"],
+    Frontend: ["React", "TypeScript", "JavaScript", "React Native", "Tailwind CSS", "HTML", "CSS"],
     "Full-stack": ["Next.js", "PostgreSQL"],
     Mobile: ["Kotlin (Android nativo)", "React Native"],
-    Datos: ["Tableau", "SQL", "Análisis y visualización de datos", "QGIS"],
-    Otras: ["Git", "Prototipado rápido (Magic Patterns)", "Flujos de desarrollo con agentes de IA"],
+    Datos: ["Tableau", "SQL", "SQLite", "Excel", "Python", "Web scraping", "Análisis y visualización de datos", "QGIS"],
+    Otras: ["Git", "Linux (Mint)", "Prototipado rápido (Magic Patterns)", "Flujos de desarrollo con agentes de IA"],
   },
   en: {
-    Frontend: ["React", "TypeScript", "JavaScript", "React Native", "HTML", "CSS"],
+    Frontend: ["React", "TypeScript", "JavaScript", "React Native", "Tailwind CSS", "HTML", "CSS"],
     "Full-stack": ["Next.js", "PostgreSQL"],
     Mobile: ["Kotlin (Native Android)", "React Native"],
-    Data: ["Tableau", "SQL", "Data analysis and visualization", "QGIS"],
-    Other: ["Git", "Rapid prototyping (Magic Patterns)", "AI-agent-assisted development workflows"],
+    Data: ["Tableau", "SQL", "SQLite", "Excel", "Python", "Web scraping", "Data analysis and visualization", "QGIS"],
+    Other: ["Git", "Linux (Mint)", "Rapid prototyping (Magic Patterns)", "AI-agent-assisted development workflows"],
   },
 };
 
