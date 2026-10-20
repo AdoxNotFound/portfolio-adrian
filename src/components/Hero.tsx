@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { profile } from "@/data/profile";
 import { hero } from "@/data/content";
 import { useLanguage } from "@/i18n/LanguageProvider";
@@ -17,7 +18,15 @@ export default function Hero() {
 
   return (
     <section id="top" className="mx-auto max-w-4xl px-6 py-20">
-      <p className="text-sm font-medium text-indigo-600 dark:text-indigo-400">{t.location}</p>
+      <Image
+        src="/adrian.jpg"
+        alt={profile.name}
+        width={112}
+        height={112}
+        priority
+        className="h-28 w-28 rounded-full object-cover ring-2 ring-zinc-200 dark:ring-zinc-800"
+      />
+      <p className="mt-6 text-sm font-medium text-indigo-600 dark:text-indigo-400">{t.location}</p>
       <h1 className="mt-2 text-4xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-5xl">
         {profile.name}
       </h1>
