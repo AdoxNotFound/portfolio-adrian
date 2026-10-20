@@ -71,7 +71,7 @@ export const projects: Record<Locale, ProjectContent[]> = {
       role: "Coordinación técnica y desarrollo frontend",
       stack: ["React"],
       description:
-        "Coordinación técnica y desarrollo frontend de una plataforma de trazabilidad para la cadena de soya boliviana, con participación activa en la mesa técnica junto a actores como BITS, Solidaridad, Vega, APIA e IOL.",
+        "Coordinación técnica y desarrollo frontend de una plataforma de trazabilidad para la cadena de soya boliviana, con participación activa en la mesa técnica junto a actores de la cadena productiva como CANIOB, Fundación Solidaridad y ANAPO.",
     },
     {
       name: "RIQS — Reporte Integral Quincenal de Soya",
@@ -80,11 +80,11 @@ export const projects: Record<Locale, ProjectContent[]> = {
       role: "Desarrollador Front-End",
       stack: ["React", "JavaScript"],
       description:
-        "Plataforma para que empresas oleaginosas carguen reportes de producción en Excel, con validación de datos, generación de resúmenes y dashboards históricos, cumpliendo los requisitos del Ministerio.",
+        "Plataforma para que empresas oleaginosas carguen reportes de producción en Excel, con validación de datos, generación de resúmenes y dashboards históricos, cumpliendo los requisitos del Viceministerio de Desarrollo Productivo y Economía Plural (MDPyEP).",
     },
     {
       name: "FIDEPUNTOS MR. CLORO",
-      client: "Sierra Trading Company SRL / HANSA Ltda.",
+      client: "Sierra Trading Company SRL",
       period: "Oct 2025 – presente",
       role: "Desarrollador Front-End y decisión de producto",
       stack: ["React", "PWA"],
@@ -102,12 +102,12 @@ export const projects: Record<Locale, ProjectContent[]> = {
     },
     {
       name: "Plataforma de gestión de cobros y notificaciones",
-      client: "Asociación gremial y de profesionales (Santa Cruz, Bolivia)",
+      client: "Asociación de profesionales (Santa Cruz, Bolivia)",
       period: "Feb 2024 – May 2025",
       role: "Desarrollador Front-End y Mobile",
       stack: ["React", "React Native"],
       description:
-        "Diseño y desarrollo de una plataforma web y una aplicación multiplataforma de gestión de cobros y notificaciones para una entidad gremial.",
+        "Diseño y desarrollo de una plataforma web y una aplicación multiplataforma de gestión de cobros y notificaciones para una asociación de profesionales.",
       note: "Proyecto bajo acuerdo de confidencialidad — detalle técnico disponible solo con autorización del cliente.",
     },
   ],
@@ -129,7 +129,7 @@ export const projects: Record<Locale, ProjectContent[]> = {
       role: "Technical coordination and frontend development",
       stack: ["React"],
       description:
-        "Technical coordination and frontend development of a traceability platform for the Bolivian soy supply chain, actively participating in the technical roundtable alongside stakeholders such as BITS, Solidaridad, Vega, APIA, and IOL.",
+        "Technical coordination and frontend development of a traceability platform for the Bolivian soy supply chain, actively participating in the technical roundtable alongside supply-chain stakeholders such as CANIOB, Fundación Solidaridad, and ANAPO.",
     },
     {
       name: "RIQS — Biweekly Integral Soy Report",
@@ -138,11 +138,11 @@ export const projects: Record<Locale, ProjectContent[]> = {
       role: "Front-End Developer",
       stack: ["React", "JavaScript"],
       description:
-        "Platform for vegetable-oil companies to upload production reports in Excel, with data validation, summary generation, and historical dashboards, meeting Ministry requirements.",
+        "Platform for vegetable-oil companies to upload production reports in Excel, with data validation, summary generation, and historical dashboards, meeting the requirements of Bolivia's Vice-Ministry of Productive Development and Plural Economy (MDPyEP).",
     },
     {
       name: "FIDEPUNTOS MR. CLORO",
-      client: "Sierra Trading Company SRL / HANSA Ltda.",
+      client: "Sierra Trading Company SRL",
       period: "Oct 2025 – present",
       role: "Front-End Developer & product decision-making",
       stack: ["React", "PWA"],
@@ -160,12 +160,12 @@ export const projects: Record<Locale, ProjectContent[]> = {
     },
     {
       name: "Dues collection and notifications platform",
-      client: "Professional trade association (Santa Cruz, Bolivia)",
+      client: "Professional association (Santa Cruz, Bolivia)",
       period: "Feb 2024 – May 2025",
       role: "Front-End and Mobile Developer",
       stack: ["React", "React Native"],
       description:
-        "Design and development of a web platform and a cross-platform app for dues collection and member notifications for a trade association.",
+        "Design and development of a web platform and a cross-platform app for dues collection and member notifications for a professional association.",
       note: "Under an NDA — further technical detail available only with the client's authorization.",
     },
   ],
@@ -193,7 +193,12 @@ export const skillsSection = {
   en: { heading: "Skills" },
 };
 
-export type EducationItem = { title: string; institution: string; period: string };
+export type EducationItem = {
+  title: string;
+  institution: string;
+  period: string;
+  link?: { label: string; href: string };
+};
 
 export const education: Record<Locale, EducationItem[]> = {
   es: [
@@ -212,6 +217,12 @@ export const education: Record<Locale, EducationItem[]> = {
       institution: "Universidad San Francisco Xavier de Chuquisaca",
       period: "Completado en 2025",
     },
+    {
+      title: "Certificado de inglés EF SET — Reading C2, Listening C1 (72/100)",
+      institution: "EF Education First",
+      period: "Ene 2023 — actualización en curso (próxima: versión con habla y escritura)",
+      link: { label: "Ver certificado", href: "https://cert.efset.org/CGhmo4?cid=em100a" },
+    },
   ],
   en: [
     {
@@ -228,6 +239,12 @@ export const education: Record<Locale, EducationItem[]> = {
       title: "Graduate Diploma in UX/UI Design",
       institution: "Universidad San Francisco Xavier de Chuquisaca",
       period: "Completed in 2025",
+    },
+    {
+      title: "EF SET English Certificate — Reading C2, Listening C1 (72/100)",
+      institution: "EF Education First",
+      period: "Jan 2023 — update in progress (next: speaking & writing version)",
+      link: { label: "View certificate", href: "https://cert.efset.org/CGhmo4?cid=em100a" },
     },
   ],
 };

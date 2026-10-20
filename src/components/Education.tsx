@@ -18,6 +18,14 @@ export default function Education() {
             <p className="text-sm text-zinc-600 dark:text-zinc-400">
               {item.institution} · {item.period}
             </p>
+            {item.link && (
+              <a
+                href={item.link.href}
+                className="mt-1 inline-block text-sm font-medium text-indigo-600 hover:underline dark:text-indigo-400"
+              >
+                {item.link.label} →
+              </a>
+            )}
           </li>
         ))}
       </ul>
